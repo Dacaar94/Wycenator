@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/iconfinder_attachment-paperclip-clip-append-attach_2937373.png</file>
+        <file>img/iconfinder_document-text-file-sheet-doc_2931167.png</file>
+        <file>img/iconfinder_folder-storage-files_2931141.png</file>
+        <file>img/iconfinder_new-document-empty-file-sheet_2931173.png</file>
+        <file>img/iconfinder_print-output-printer_2931177.png</file>
+        <file>img/iconfinder_redo-forward-arrow_2931165.png</file>
+        <file>img/iconfinder_save-guardar-diskette_2931176.png</file>
+        <file>img/iconfinder_trash-delete-remove_2931168.png</file>
+        <file>img/iconfinder_undo-back-arrow_2931166 (1).png</file>
+        <file>img/iconfinder_copy-duplicate-multiply-clone_2931153.png</file>
+        <file>img/iconfinder_cut-scissor-clippers-shear_2931169.png</file>
+        <file>img/iconfinder_edit-change-pencil_2931178.png</file>
+        <file>img/iconfinder_exit-enter-leave-door-in_2931189.png</file>
+        <file>img/iconfinder_help-support-question-faq_2931179.png</file>
+        <file>img/iconfinder_menu-lines-list_2931181.png</file>
+        <file>img/iconfinder_paste-clipboard-copy_2931174.png</file>
+        <file>img/iconfinder_reload-refresh-repeat-arrow_2937372.png</file>
+        <file>img/iconfinder_user-account-profile-human-avatar-face-head-_2931147.png</file>
+    </qresource>
+</RCC>
