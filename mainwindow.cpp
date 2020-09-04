@@ -46,10 +46,17 @@ void MainWindow::on_pushButton_7_clicked()
 void MainWindow::on_resertbutton_clicked()
 {
     // Zatwierdzanie Resetu
-    // Trzeba zmienić YES i NO na PL
-QMessageBox::StandardButton reply=QMessageBox::question(this,"RESET?","Czy napewno chcesz zresetować aplikcaję?",
-                                                        QMessageBox::Yes | QMessageBox::No);
-   if(reply == QMessageBox::Yes)
+
+
+    QMessageBox messageBox(QMessageBox::Question,
+                ("Reset?"),
+                ("Czy napewno chcesz zresetować aplikację?"),
+                QMessageBox::Yes | QMessageBox::No,
+                this);
+    messageBox.setButtonText(QMessageBox::Yes,"Tak");
+    messageBox.setButtonText(QMessageBox::No,"Nie");
+    if(messageBox.exec() == QMessageBox::Yes)
+
    {
     // Reset Combo Box
     ui->comboBox->setCurrentIndex(0);
@@ -90,43 +97,82 @@ else
    { qDebug() << "No is clicked";}
 }
 
-////////////////KAROL KOPIOWANIE//////////////////
 
-
-
-
-
-
-
-/////////////////////////////////KOPIUJ/////////////////////////
+/////////////////////////////////KOPIUJ  /////////////////////////
 void MainWindow::on_actionKopiuj_triggered()
 {
-    const QList< QLineEdit*> zajebista_lista = ui->tabWidget->findChildren<QLineEdit*>();
+    const QList< QLineEdit*> listlec = ui->tabWidget->findChildren<QLineEdit*>();
 
-    for (auto* line_edit : zajebista_lista)
+    for (auto* lenc : listlec)
     {
-        line_edit->copy();
+        lenc->copy();
     }
-
-
-
-
-
-//   this->ui->lineEdit->copy();
-//    this->ui->lineEdit_2->copy();
 
 }
 /////////////////////////////////WKLEJ/////////////////////////
 void MainWindow::on_actionWklej_triggered()
 {
-    const QList< QLineEdit*> zajebista_lista = ui->tabWidget->findChildren<QLineEdit*>();
+    if (qobject_cast<QLineEdit*>(this->focusWidget()))
+        qobject_cast<QLineEdit*>(this->focusWidget())->paste();
 
-    for (auto* line_edit : zajebista_lista)
+}
+/////////////////////////////////WYTNIJ/////////////////////////
+void MainWindow::on_actionWytnij_triggered()
+{
+    const QList< QLineEdit*> listleq = ui->tabWidget->findChildren<QLineEdit*>();
+
+    for (auto* lenq : listleq)
     {
-        line_edit->paste();
+        lenq->cut();
     }
+}
 
-//    this->ui->lineEdit->paste();
-//    this->ui->lineEdit_2->paste();
+void MainWindow::on_actionWstecz_triggered()
+{
+    ///////////////// WSTECZ /////////////////
+}
 
+void MainWindow::on_actionNaprz_d_triggered()
+{
+    //////////////////// NAPRZOD //////////////////
+}
+
+void MainWindow::on_actionNowy_triggered()
+{
+    //////////////////// NOWY //////////////////
+}
+
+void MainWindow::on_actionOtw_rz_triggered()
+{
+    //////////////////// OTWÓRZ  //////////////////
+}
+
+void MainWindow::on_actionZapisz_triggered()
+{
+    //////////////////// ZAPISZ //////////////////
+}
+
+void MainWindow::on_actionZapisz_jako_triggered()
+{
+    //////////////////// ZAPISZ JAKO //////////////////
+}
+
+void MainWindow::on_actionInstrukcja_triggered()
+{
+    //////////////////// INSTRUKCJA //////////////////
+}
+
+void MainWindow::on_actionO_programie_triggered()
+{
+    //////////////////// O PROGRAMIE //////////////////
+}
+
+void MainWindow::on_actionO_tw_rcy_triggered()
+{
+    //////////////////// O TWORCY //////////////////
+}
+
+void MainWindow::on_actionZako_cz_triggered()
+{
+   //////////////////// ZAKONCZ //////////////////
 }

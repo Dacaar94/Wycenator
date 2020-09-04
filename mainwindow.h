@@ -35,6 +35,28 @@ private slots:
 
     void on_actionWklej_triggered();
 
+    void on_actionWytnij_triggered();
+
+    void on_actionWstecz_triggered();
+
+    void on_actionNaprz_d_triggered();
+
+    void on_actionNowy_triggered();
+
+    void on_actionOtw_rz_triggered();
+
+    void on_actionZapisz_triggered();
+
+    void on_actionZapisz_jako_triggered();
+
+    void on_actionInstrukcja_triggered();
+
+    void on_actionO_programie_triggered();
+
+    void on_actionO_tw_rcy_triggered();
+
+    void on_actionZako_cz_triggered();
+
 private:
     Ui::MainWindow *ui;
 
