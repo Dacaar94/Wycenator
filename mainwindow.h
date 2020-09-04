@@ -31,7 +31,12 @@ private slots:
 
 
 
+    void on_actionKopiuj_triggered();
+
+    void on_actionWklej_triggered();
+
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H
