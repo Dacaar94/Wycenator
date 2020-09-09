@@ -671,7 +671,7 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_5">
+           <widget class="QPushButton" name="pbDalej3">
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
@@ -689,7 +689,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QPushButton" name="resertbutton">
+       <widget class="QPushButton" name="resetbutton">
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>

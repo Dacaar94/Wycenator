@@ -23,7 +23,7 @@ private slots:
     void on_pushButton_3_clicked();
 
 
-    void on_resertbutton_clicked();
+    void on_resetbutton_clicked();
 
     void on_pushButton_6_clicked();
 
@@ -58,6 +58,7 @@ private slots:
     void on_actionZako_cz_triggered();
 
 private:
+
     Ui::MainWindow *ui;
 
 };

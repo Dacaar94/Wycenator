@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
 
+    ui->toolButton->setToolTip("dupa");     //// tool button opis
 }
 MainWindow::~MainWindow()
 {
@@ -43,7 +44,7 @@ void MainWindow::on_pushButton_7_clicked()
 }
 
 /////////////////////// Resetowanie Programu////////////////////////////////
-void MainWindow::on_resertbutton_clicked()
+void MainWindow::on_resetbutton_clicked()
 {
     // Zatwierdzanie Resetu
 
