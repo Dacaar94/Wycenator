@@ -11,8 +11,18 @@ MainWindow::MainWindow(QWidget *parent)
 {
 
     ui->setupUi(this);
+    mydb=QSqlDatabase::addDatabase("QSQLITE");
+    mydb.setDatabaseName("C:/Users/Karas/Desktop/Wycenator/Wycenator/bazadanych.db");
 
-    ui->toolButton->setToolTip("dupa");     //// tool button opis
+
+////////////////////////STATUS PODLACZENIA DATABASE ////////////////////////////
+   if(mydb.open())
+ { qDebug() << "Database Connected";}
+   else
+ { qDebug() << "Failed to connect database";}
+
+/////////////////////////////////TOOLTIPY//////////////////////////////
+   ui->toolButton->setToolTip("dupa");     //// tool button opis
 }
 MainWindow::~MainWindow()
 {
@@ -44,8 +54,11 @@ void MainWindow::on_pushButton_7_clicked()
 }
 
 /////////////////////// Resetowanie Programu////////////////////////////////
+
 void MainWindow::on_resetbutton_clicked()
 {
+
+
     // Zatwierdzanie Resetu
 
 
@@ -96,8 +109,8 @@ void MainWindow::on_resetbutton_clicked()
 
 else
    { qDebug() << "No is clicked";}
-}
 
+}
 
 /////////////////////////////////KOPIUJ  /////////////////////////
 void MainWindow::on_actionKopiuj_triggered()
@@ -177,3 +190,5 @@ void MainWindow::on_actionZako_cz_triggered()
 {
    //////////////////// ZAKONCZ //////////////////
 }
+
+

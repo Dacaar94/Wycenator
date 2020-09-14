@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.0
+** Created by: Qt User Interface Compiler version 5.15.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -135,9 +135,9 @@ public:
     QHBoxLayout *horizontalLayout_11;
     QPushButton *pushButton_7;
     QSpacerItem *horizontalSpacer_4;
-    QPushButton *pushButton_5;
+    QPushButton *pbDalej3;
     QHBoxLayout *horizontalLayout;
-    QPushButton *resertbutton;
+    QPushButton *resetbutton;
     QSpacerItem *horizontalSpacer;
     QPushButton *pushButton_2;
     QMenuBar *menubar;
@@ -648,11 +648,11 @@ public:
 
         horizontalLayout_11->addItem(horizontalSpacer_4);
 
-        pushButton_5 = new QPushButton(tab_3);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setCursor(QCursor(Qt::PointingHandCursor));
+        pbDalej3 = new QPushButton(tab_3);
+        pbDalej3->setObjectName(QString::fromUtf8("pbDalej3"));
+        pbDalej3->setCursor(QCursor(Qt::PointingHandCursor));
 
-        horizontalLayout_11->addWidget(pushButton_5);
+        horizontalLayout_11->addWidget(pbDalej3);
 
 
         verticalLayout_5->addLayout(horizontalLayout_11);
@@ -663,11 +663,10 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        resertbutton = new QPushButton(centralwidget);
-        resertbutton->setObjectName(QString::fromUtf8("resertbutton"));
-        resertbutton->setCursor(QCursor(Qt::PointingHandCursor));
+        resetbutton = new QPushButton(centralwidget);
+        resetbutton->setObjectName(QString::fromUtf8("resetbutton"));
 
-        horizontalLayout->addWidget(resertbutton);
+        horizontalLayout->addWidget(resetbutton);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -685,7 +684,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 690, 20));
+        menubar->setGeometry(QRect(0, 0, 690, 21));
         menuPlik = new QMenu(menubar);
         menuPlik->setObjectName(QString::fromUtf8("menuPlik"));
         menuEdycja = new QMenu(menubar);
@@ -811,9 +810,9 @@ public:
         checkBox_2->setText(QCoreApplication::translate("MainWindow", "Wycena kanalizacji", nullptr));
         toolButton_9->setText(QCoreApplication::translate("MainWindow", "?", nullptr));
         pushButton_7->setText(QCoreApplication::translate("MainWindow", "Wstecz", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("MainWindow", "Dalej", nullptr));
+        pbDalej3->setText(QCoreApplication::translate("MainWindow", "Dalej", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "CO/CWU", nullptr));
-        resertbutton->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
+        resetbutton->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         menuPlik->setTitle(QCoreApplication::translate("MainWindow", "Plik", nullptr));
         menuEdycja->setTitle(QCoreApplication::translate("MainWindow", "Edycja", nullptr));
